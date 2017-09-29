@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit370c1deb3f2fd10682cde4669772ff90
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
@@ -17,7 +21,17 @@ class ComposerStaticInit370c1deb3f2fd10682cde4669772ff90
         ),
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\Finder\\' => 25,
+            'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\Debug\\' => 24,
+            'Symfony\\Component\\Console\\' => 26,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'D' => 
         array (
@@ -37,9 +51,37 @@ class ComposerStaticInit370c1deb3f2fd10682cde4669772ff90
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'Symfony\\Component\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -58,7 +100,22 @@ class ComposerStaticInit370c1deb3f2fd10682cde4669772ff90
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
+            'PhpSpec' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpspec/phpspec/src',
+            ),
         ),
+        'D' => 
+        array (
+            'Diff' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpspec/php-diff/lib',
+            ),
+        ),
+    );
+
+    public static $fallbackDirsPsr0 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $classMap = array (
@@ -628,6 +685,7 @@ class ComposerStaticInit370c1deb3f2fd10682cde4669772ff90
             $loader->prefixLengthsPsr4 = ComposerStaticInit370c1deb3f2fd10682cde4669772ff90::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit370c1deb3f2fd10682cde4669772ff90::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit370c1deb3f2fd10682cde4669772ff90::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInit370c1deb3f2fd10682cde4669772ff90::$fallbackDirsPsr0;
             $loader->classMap = ComposerStaticInit370c1deb3f2fd10682cde4669772ff90::$classMap;
 
         }, null, ClassLoader::class);
